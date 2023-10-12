@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  .wrapper-header {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 200px;
+  }
+
+  .wrapper-content {
+    width: 1292px;
+    height: 100%;
+  }
+}

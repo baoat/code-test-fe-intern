@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import style from "./App.scss";
+import classNames from "classnames/bind";
+
+const cx = classNames.bind(style);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={cx("wrapper")}>
+        <header className={cx("wrapper-header")}>
+          <h1>Header</h1>
+        </header>
+        <div className={cx("wrapper-content")}>
+          <h1>Content</h1>
+          <footer className={cx("wrapper-footer")}>Footer</footer>
+        </div>
+      </div>
+    </>
   );
 }
 
