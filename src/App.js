@@ -25,21 +25,11 @@ function App() {
               <div className={cx("logo")}>
                 <img src={logoNCC} alt="" />
               </div>
-              <div className={cx("title")}>
-                <div
-                  style={{
-                    width: "241px",
-                    height: "21px",
-                    margin: "15px",
-                    fontSize: "16px",
-                    fontWeight: "600",
-                  }}
-                >
+              <div className={cx("wrapper-title")}>
+                <div className={cx("title")}>
                   <span>Lorem ipsum dolor sit asmet?</span>
                 </div>
-                <div
-                  style={{ width: "972px", height: "95px", fontSize: "14px" }}
-                >
+                <div className={cx("title-content")}>
                   <span style={{ float: "left", textAlign: "center" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     tristique consequat placerat. Vestibulum auctor pellentesque
