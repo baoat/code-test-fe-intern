@@ -22,8 +22,10 @@ function App() {
         <div className={cx("wrapper-content")}>
           <div className={cx("content")}>
             <div className={cx("container")}>
-              <div className={cx("logo")}>
-                <img src={logoNCC} alt="" />
+              <div className={cx("wrapper-logo")}>
+                <div className={cx("logo")}>
+                  <img src={logoNCC} alt="" width={"100%"} />
+                </div>
               </div>
               <div className={cx("wrapper-title")}>
                 <div className={cx("title")}>

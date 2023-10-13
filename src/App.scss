@@ -1,6 +1,5 @@
 .wrapper {
   display: flex;
-  // align-items: center;
   height: 935px;
 }
 
@@ -8,7 +7,6 @@
   background-color:#191718;
   color: #888888;
   height: 100%;
-  // width: 130px;
   width: 8%;
 }
 
@@ -36,7 +34,14 @@
   height: 834px;
 }
 
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
+  width: 40%;
   text-align: center;
   margin: 15px 0 20px 0
 } 
@@ -62,7 +67,6 @@
 }
 
 .title-content {
-  // width: "70%", height: "95px", fontSize: "14px"
   width: 70%;
   height: 95px;
   font-size: 14px;
@@ -75,12 +79,10 @@
 
 .job-item{
   width: 32%;
-  height: 252px;
 }
 
 .text {
   font-size: 14px;
-  width: 279px;
 }
 
 .job-title {
@@ -91,10 +93,14 @@
 .info {
   display: flex;
   margin-top: 13px;
+
+  .text {
+    width: 72%;
+  }
 }
 
 .img {
-  width: 105px;
+  width: 28%;
 }
 
 .container {
@@ -110,4 +116,65 @@
   border-top: 1px solid #888888;
 }
 
+@media only screen and (max-width: 740px){
+
+  .wrapper {
+    height: 1300px;
+  }
+
+  .content {
+    height: 1205px;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper-title {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 14px;
+    width: 35%;
+  }
+
+  .title-content {
+    height: 206px;
+    font-size: 12px;
+  }
+  
+  .job-item{
+    width: 70%;
+  }
+
+  .wrapper-header {
+    width: 70px;
+  }
+
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .job {
+    display: flex;
+  }
+
+  .wrapper-title {
+    height: 300px;
+  }
+  .title-content {
+    height: 185px;
+  }
+
+  .wrapper-header {
+    width: 70px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 
