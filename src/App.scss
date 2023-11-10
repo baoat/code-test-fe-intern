@@ -1,11 +1,7 @@
 .wrapper {
-  height: 935px;
+  overflow-x: hidden;
+  height: 732px;
 }
-
-.wrapper-header {
-  height: 100%;
-}
-
 
 .header {
   background-color: black;
@@ -49,6 +45,11 @@
   list-style: none;
   border-bottom: 1px solid #888888;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5C5C5C;
+    color: #fff;
+  }
 }
 
 .header-list-item__item {
@@ -72,20 +73,31 @@
   padding: 0 20px;
 }
 
+.content-logo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .logo {
-  padding: 10px;
+  width: 310px;
+  height: 122px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
-  background-color: #888888;
-  padding: 35px 0;
+  background-color: #EFEFEF;
   text-align: center;
+  padding: 38px 0;
 }
 
 .title__title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0 0 10px 0;
+  line-height: 21.09px;
 }
 
 .title__content {
@@ -93,6 +105,9 @@
 }
 
 .title__content .content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.72px;
   text-align: center;
 }
 
@@ -103,20 +118,22 @@
 
 .course-item {
   width: 31.5%;
-  height: 300px;
-  background-color: orange;
   background-clip: content-box;
   margin-bottom: 10px;
-  order: 3;
-  // transform: rotate(75deg) translate3d(0,0,0);
+
+  .course-item__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.13px;
+  }
 }
 
-.pandabar {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  background-color: orange;
-  order: 2;
+.course-item__content, .content {
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.75px;
+  }
 }
 
 .footer {
@@ -130,9 +147,8 @@
 }
 
 @media (max-width: 1112px) {
-  .wrapper-header {
-    height: auto;
-  }
+
+
 
   .header {
     height: 20px;
@@ -163,22 +179,39 @@
   }
 }
 
-@media (min-width: 740px) {
-  .course-item:nth-child(-n+3) {
-    order: 1;
+@media(max-width:940px) {
+  .logo {
+    width: 250px;
+    height: 100px;
   }
 }
+
+@media(max-width: 760px) {
+  .logo {
+    width: 200px;
+    height: 80px;
+  }
+
+}
+
 @media (max-width: 739px) {
   .course-item {
     width: 49%;
   }
+}
 
-  .course-item:nth-child(-n+2) {
-    order: 1;
+@media (max-width: 625px) {
+  .logo {
+    width: 150px;
+    height: 60px;
   }
 }
 
 @media (max-width: 489px) {
+  .logo {
+    width: 125px;
+    height: 45px;
+  }
   .course-item {
     width: 100%;
   }
@@ -201,12 +234,4 @@
   to {
   height: 100%;
   }
-}
-
-.orgin {
-  background-color: orange;
-}
-
-.black {
-  background-color: #000;
 }
